@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
-    <title>Bootstrap Example</title>
+    <title>Formulario</title>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
   </head>
   <body class="p-3 m-0 border-0 bd-example">
@@ -13,18 +13,26 @@
 
     
     <form>
-      <div class="mb-3">
-        <label for="exampleInputEmail1" class="form-label">Email address</label>
-        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+        <div>
+          <label for="nombre">Nombre:</label>
+          <input type="text" id="nombre"/>
+        </div>
+      <div>
+        <label for="correo">Correo electrónico:</label>
+        <input type="email" id="Correo" min="@" />
+        <div id="emailHelp" class="form-text">Tu correo es para enviarte el confirmado</div>
       </div>
       <div class="mb-3">
-        <label for="exampleInputPassword1" class="form-label">Password</label>
-        <input type="password" class="form-control" id="exampleInputPassword1">
+        <label for="Edad">Edad:</label>
+        <input type="number" id="Edad" min="18" max="99"/>
       </div>
-      <div class="mb-3 form-check">
-        <input type="checkbox" class="form-check-input" id="exampleCheck1">
-        <label class="form-check-label" for="exampleCheck1">Check me out</label>
+      <div>
+        <label for="Mensaje">Mensaje:</label>
+        <textarea name="Mensaje" rows="10" maxlength="250"></textarea>
+      </div>
+      <div>
+          <label for="politica de privacidad">Politica de privacidad:</label>
+        <input type="checkbox" name="politica de privacidad" required/>
       </div>
       <button type="submit" class="btn btn-primary">Submit</button>
     </form>
